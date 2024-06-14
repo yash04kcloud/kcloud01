@@ -12,7 +12,7 @@ trigger conTrigger on Contact (after insert , after update, after delete) {
             accountIdSet.add(con.AccountId);
         }
     }
-    
+    //hiii
     if(Trigger.isDelete) {
         for(Contact con : trigger.old) {
             accountIdSet.add(con.AccountId);
